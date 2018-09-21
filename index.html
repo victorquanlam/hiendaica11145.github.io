@@ -50,6 +50,14 @@ body, html {
         min-height: 400px;
     }
 }
+
+.fly-in-text.hidden li {
+  opacity: 0;
+}
+
+.fly-in-text.hidden span:nth-child(1) { transform: translateX(-200px) translateY(-200px); }
+.fly-in-text.hidden span:nth-child(2) { transform: translateX(20px) translateY(100px); }
+.fly-in-text.hidden span:nth-child(3) { transform: translateX(-150px) translateY(-80px); }
 </style>
 <body>
 
@@ -79,8 +87,8 @@ body, html {
 
 <!-- First Parallax Image with Logo Text -->
 <div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
-  <div class="w3-display-middle" style="white-space:nowrap;">
-    <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity">TRUONG <span class="w3-hide-small">QUAN</span> LAM</span>
+  <div class="fly-in-text hidden w3-display-middle" style="white-space:nowrap;">
+    <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity">TRUONG <span class="w3-hide-small">QUAN</span> <span>LAM</span></span>
   </div>
 </div>
 
@@ -88,7 +96,7 @@ body, html {
 <div class="w3-content w3-container w3-padding-64" id="about">
   <h3 class="w3-center">ABOUT ME</h3>
   <p class="w3-center"><em>I love programming</em></p>
-  <p>I am currently in second year of Bachelor of Computing, majoring in Software Development from Swinburne University of Technology.
+  <p>I am currently majoring Software Development, in the Bachelor of Computing course at Swinburne University of Technology.
   </p>
   <div class="w3-row">
     <div class="w3-col m6 w3-center w3-padding-large">
@@ -98,7 +106,7 @@ body, html {
 
     <!-- Hide this text on small devices -->
     <div class="w3-col m6 w3-hide-small w3-padding-large">
-      <p>A strong knowledge of the Front-End Development framework and web development as shown in my distinction average achieved in subjects such as Web Development, Interface Design and Development. Excellent leadership skills developed during my studies and through group projects at the University. In team collaborations, I usually step up as a leader. In Development Project 1 unit, I supervised my group to ensure that it operates smoothly. This resulted in our group finishing our project 2 weeks before the deadline. Excellent understanding of C#, C++ programming language. Most of my experience is in online practices solving problems and web development. Reliable communication skills honed through several years in the roles of team member and customer service in the fast food industry. On the occasions when my customers complained about their food, I listened to them and asked my teammate to remake the dish for the customers. I have been ensuring the satisfaction of several customers, so that they become regular patrons of the store. </p>
+      <p>I have strong knowledge in Front-End Framework and a firm understanding in Web Development. This is evident by my Distinction average in my studies at Swinburne as well as my Web Design work. I’m particularly strong in C# and C++ languages, but I’m eager to increase my programming vocabulary. I’ve demonstrated excellent leadership qualities through group-based units such as Development Project 1 & 2 which have allowed me to coordinate a team of students in to documenting, designing and producing various software and web-based programs. I’ve enjoyed the role as leader for most of the group work as I place a large emphasis on moving forward, together as cohesive team. In some situations, the team has accomplished delivering a software package two weeks ahead of schedule. It’s through these team-based exercises that I’ve developed reliable communication and interpersonal skills. Outside of my studies at Swinburne, I’ve demonstrated full team cooperation, in the hospitality industry. It is the highest priority to ensure the best possible outcome for all parties, which I exhibit for customers, to secure their satisfaction.</p>
     </div>
   </div>
   <p class="w3-large w3-center w3-padding-16">Im really good at:</p>
@@ -134,11 +142,11 @@ body, html {
     </div>
 
     <div class="w3-col m9 w3-left">
-      Bachelor of Computer Science (Professional)<br>
+      <b>Bachelor of Computer Science (Professional)</b><br>
       Swinburne University, Hawthorn, VIC<br>
-      Major: Software Development<br>
+      Major - Software Development<br>
     </div>
-    <div class="w3-row-padding w3-center"></div>
+    <div class="w3-row-padding w3-center"><br></div>
     </div>
     <div class="w3-row-padding w3-center">
 
@@ -147,9 +155,9 @@ body, html {
       </div>
 
       <div class="w3-col m9 w3-left">
-        Vice-chancellor’s scholarship from Swinburne University<br>
+       <b> Vice-Chancellor’s Excellence Scholarship</b><br>
       </div>
-      <div class="w3-row-padding w3-center"></div>
+      <div class="w3-row-padding w3-center"><br></div>
 
     </div>
     <div class="w3-row-padding w3-center">
@@ -158,11 +166,11 @@ body, html {
       </div>
 
       <div class="w3-col m9 w3-left">
-        Victorian Certificate of Education<br>
+        <b>Victorian Certificate of Education</b><br>
         Acknowledge Education (Stott's College - Melbourne Campus)<br>
-        ENTER: 96.95<br>
+        ATAR: 96.95<br>
       </div>
-      <div class="w3-row-padding w3-center"></div>
+      <div class="w3-row-padding w3-center"><br></div>
 
     </div>
     <div class="w3-row-padding w3-center">
@@ -171,55 +179,69 @@ body, html {
       </div>
 
       <div class="w3-col m9 w3-left">
-        School Dux Award<br>
+        <b>School Dux Award</b><br>
         Academic Achievement Awards<br>
+<i>Specialist Mathematics, Further Mathematics, Mathematical Methods, Vietnamese</i>
+<br>
       </div>
-      <div class="w3-row-padding w3-center"></div>
+      <div class="w3-row-padding w3-center"><br></div>
 
     </div>
   
 
 
   <h3 class="w3-center">PROJECTS</h3>
-  <p class="w3-center"><em>Here are some of my latest project<br> Click on the images to make them bigger</em></p><br>
+  <p class="w3-center"><em>Here are my latest projects<br> Click on the images to enlarge and for more details</em></p><br>
 
   <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
-  <div class="w3-row-padding w3-center">
-    <div class="w3-col m3">
-      <img src="/w3images/p1.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="project 1">
-    </div>
-
-    <div class="w3-col m3">
-      <img src="/w3images/p2.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="project 2">
-    </div>
-
-    <div class="w3-col m3">
-      <img src="/w3images/p3.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="project 3">
-    </div>
-
-    <div class="w3-col m3">
-      <img src="/w3images/p4.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="project 4">
-    </div>
-  </div>
-
   <div class="w3-row-padding w3-center w3-section">
     <div class="w3-col m3">
-      <img src="/w3images/p5.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="project 5">
+      <span>The Robot Navigation AI</span><br>
+      <img src="images/unit5.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt=" By using AI Logic, Robot Navigation can solve a maze by using quiet severals different method such as: DFS, BFS,etc. Source code: Check out my gitHub">
     </div>
 
     <div class="w3-col m3">
-      <img src="/w3images/p6.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="project 6">
+      <span>Photo Gallery-Instagram Clone</span><br>
+      <img src="images/unit6.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Type: Custom app. This is a photo gallery which users can upload their images and like share or tag others who are friend with them. Outcome: Bootstrap, AngularJS, HTML5, SQL, Firebase. Source code: check out my Github">
     </div>
 
     <div class="w3-col m3">
-      <img src="/w3images/p7.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="project 7">
+      <span>BattleShip</span><br>
+      <img src="images/unit7.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="A C# Battle Ship game project which I worked in a group. Outcome: knowledge for lifecycle of software, expert in Github, C#, Visual Studio. ">
     </div>
 
     <div class="w3-col m3">
-      <img src="/w3images/p8.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="project 8">
+      <span>Sale Record System</span><br>
+      <img src="images/unit8.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="The aim of this project is to provide an app to manage sales record data of People Health Pharmacy
+(PHP) Inc. This app allows users to insert their sales record. Outcome: PHP, database, myPHPAdmin. Source Code: Check my gitHub">
+    </div>
+   
+  </div>
+  <div class="w3-row-padding w3-center">
+    <div class="w3-col m3">
+      <span>Company Network System</span><br>
+      <img src="images/unit1.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Type: University assignment. Build a small network using three switches and one router using CCNA. Outcome: CCNA, VLSM, network setting. Source Code:  ">
+    </div>
+
+    <div class="w3-col m3">
+       <span>Selling Phone Web App</span><br>
+      <img src="images/unit2.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Type: University assignment. Web application for selling phone online. Outcome: HTML, CSS, JavaScript, XML, DOM, PHP and MySQL. Application of acccessibility and usability principles. Source Code: ">
+    </div>
+
+    <div class="w3-col m3">
+      <span>SwinAdventure C# Console Game</span><br>
+      <img src="images/unit3.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Type: University work. Swin-Adventure is a console based adventure game hat consists of a number of interconnected loca-tions. The player exists within one of the locations within the world, and moves between these locations using paths. The goal of the game is for the player to reach a specified location with-in the world. There may also be other locations in the world where the game ends unsuccess-fully for the player. Outcome: OOP principles, UML, C#, Visual Studio. Source Code:">
+    </div>
+
+    <div class="w3-col m3">
+      <span>Music Player</span><br>
+      <img src="images/unit4.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Type: University Work. This is a music player system base on Logism. It is a circuit board for music player. Outcome: Von Neumann and Harvard architectures, Computer logic, etc...">
     </div>
     <button class="w3-button w3-padding-large w3-light-grey" style="margin-top:64px">LOAD MORE</button>
   </div>
+
+
+  
 </div>
 
 <!-- Modal for full size images on click-->
@@ -287,6 +309,7 @@ body, html {
  
 <!-- Add Google Maps -->
 <script>
+
 
 
 // Modal Image Gallery
